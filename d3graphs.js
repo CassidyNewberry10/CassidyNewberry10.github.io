@@ -34,8 +34,7 @@ const render= data=>{
     .enter().append('rect')
     .attr('y', d=> yScale(yValue(d)))
     .attr('width', d=> xScale(xValue(d)))
-    .attr('height', yScale.bandwidth())
-    .attr('fill', 'red');
+    .attr('height', yScale.bandwidth());
 
     svg.append("text")
     .attr("class", "x label")
